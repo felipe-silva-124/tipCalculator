@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Gorjetas</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>CALCULADORA DE GORJETAS</h1>
+    </header>
+    <main>
+      <form id="tipForm">
+        <label for="price">Quanto ficou a conta?</label>
+        <p> R$ <input type="number" id="price" step="0.01"></p>
+
+        <label for="evaluation">Como foi o serviço?</label>
+        <select name="evaluation" id="evaluation">
+          <option value="30">30% - Excelente</option>
+          <option value="20">20% - Bom</option>
+          <option value="15">15% - Razoável</option>
+          <option value="10">10% - Ruim</option>
+          <option value="5">5% - Péssimo</option>
+        </select>
+
+        <label for="peoples">Quantas pessoas vão dividir a conta?</label>
+        <p><input type="number" name="peoples" id="peoples"> pessoas</p>
+
+        <button type="submit">CALCULAR!</button>
+      </form>
+      <div id="result"></div>
+    </main>
+  </div>
+
+  <script src="./index.js" defer></script>
+</body>
+
+</html>
